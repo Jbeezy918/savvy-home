@@ -23,4 +23,4 @@ See [APP_SUBMISSION.md](./APP_SUBMISSION.md) for launch checklist.
 ## License
 
 MIT © 2025 SavvyTech Automations
-Deployed with GitHub Actions + Netlify.
+Deployed with GitHub Actions + Netlify. 
