@@ -15,9 +15,15 @@ jobs:
       - name: Install Netlify CLI
         run: npm install -g netlify-cli
 
-      - name: Deploy to Netlify
-        run: |
-          netlify deploy --prod --dir=. --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_SITE_ID
+      - name: Build and Deploy
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          echo "Starting Netlify deploy..."
+          netlify deploy \
+            --auth "$NETLIFY_AUTH_TOKEN" \
+            --site "$NETLIFY_SITE_ID" \
+            --dir "." \
+            --prod \
+            --message "Automated deploy from GitHub Actions"
