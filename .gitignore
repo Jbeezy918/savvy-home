@@ -1,0 +1,12 @@
+# macOS
+.DS_Store
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# Data
+data/automations.json
+# Secrets
+.env

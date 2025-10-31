@@ -1,0 +1,20 @@
+[
+  {
+    "id": "light.living_room",
+    "name": "Living Room Light",
+    "type": "light",
+    "vendor": "Philips Hue",
+    "connection": "online",
+    "signal_strength": "strong",
+    "location_hint": "Living Room"
+  },
+  {
+    "id": "thermostat.hallway",
+    "name": "Hallway Thermostat",
+    "type": "thermostat",
+    "vendor": "Nest",
+    "connection": "offline",
+    "signal_strength": "weak",
+    "location_hint": "Hallway"
+  }
+]

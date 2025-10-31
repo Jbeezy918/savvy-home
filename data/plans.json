@@ -1,0 +1,24 @@
+{
+  "plans": {
+    "free": {
+      "name": "Free",
+      "price_display": "$0",
+      "features": [
+        "5 devices max"
+      ],
+      "limits": {
+        "max_devices": 5
+      }
+    },
+    "pro": {
+      "name": "Pro",
+      "price_display": "$4.99/mo",
+      "features": [
+        "Unlimited devices"
+      ],
+      "limits": {
+        "max_devices": 999
+      }
+    }
+  }
+}

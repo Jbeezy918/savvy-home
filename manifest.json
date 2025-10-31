@@ -1,0 +1,81 @@
+{
+  "name": "Savvy Home Setup",
+  "description": "Smart-home setup made easy",
+  "version": "0.1.2",
+  "author": "SavvyTech Automations",
+  "contact_email": "support@savvyhome.local",
+  "legal_url": "https://yourusername.github.io/savvy-home/legal",
+  "privacy_url": "https://yourusername.github.io/savvy-home/privacy",
+  "server": {
+    "transport": "http",
+    "url": "http://localhost:5055/mcp"
+  },
+  "tools": [
+    {
+      "name": "scan_home_network",
+      "description": "Scan network for devices",
+      "input_schema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "create_automation",
+      "description": "Create automation",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "trigger": {
+            "type": "string"
+          },
+          "action": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "trigger",
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "diagnose_device",
+      "description": "Diagnose device",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "device_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "device_id"
+        ]
+      }
+    },
+    {
+      "name": "suggest_routines",
+      "description": "Suggest routines",
+      "input_schema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "bulk_pair",
+      "description": "Pair devices",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "device_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "device_ids"
+        ]
+      }
+    }
+  ]
+}
